@@ -1,3 +1,32 @@
-// main page
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>簡單 POS 系統</title>
+</head>
+    <body>
+    <div id="menu-categories">
+        <h2>菜單系列</h2>
+        <ul>
+            <li><button onclick="showCategory('desserts')">甜點</button></li>
+            <li><button onclick="showCategory('coffees')">咖啡</button></li>
+            <li><button onclick="showCategory('drinks')">飲品</button></li>
+            <li><button onclick="showCategory('snacks')">輕食</button></li>
+        </ul>
+    </div>
+    <div id="order-area">
+        <div id="items-display">
+            </div>
+
+        <div id="current-order">
+            <h2>目前訂單</h2>
+            <ul id="order-list">
+                </ul>
+            <div id="order-total">
+                總計：NT$ <span id="total-price">0.00</span>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
